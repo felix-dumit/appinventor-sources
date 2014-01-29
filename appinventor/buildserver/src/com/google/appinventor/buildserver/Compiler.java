@@ -337,6 +337,11 @@ public final class Compiler {
           out.write("  <uses-feature android:name=\"android.hardware.microphone\" android:required=\"false\" />\n");
           out.write("  <uses-feature android:name=\"android.hardware.touchscreen\" android:required=\"false\" />\n");
           out.write("  <uses-feature android:name=\"android.hardware.wifi\" />\n"); // We actually require wifi
+          out.write("  <uses-permission android:name=\"android.permission.CAMERA\" />\n");
+          out.write("  <uses-feature android:name=\"android.hardware.camera\" />\n");
+          out.write("  <uses-feature android:name=\"android.hardware.camera.flash\" />\n");
+
+
       }
 
       for (String permission : permissionsNeeded) {
