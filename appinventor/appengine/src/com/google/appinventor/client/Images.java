@@ -17,6 +17,14 @@ import com.google.gwt.user.client.ui.Tree.Resources;
  */
 public interface Images extends Resources {
 
+  
+  /**
+  * Designer palette item logger icon
+ */
+  @Source("com/google/appinventor/images/logger.png")
+  ImageResource loggerComponent();
+
+
   /**
    * Android with arms raised for the welcome dialog created by
    * {@link Ode#createWelcomeDialog(boolean)}
